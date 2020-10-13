@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestAndroid</string>
+    <string name="loginAuthDefText">Логин</string>
+    <string name="passwordAuthDefText">Пароль</string>
+    <string name="authButton">Войти</string>
+    <string name="toolbarTitleMainDefText">Список продуктов</string>
+</resources>
