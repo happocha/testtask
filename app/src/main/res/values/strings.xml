@@ -4,4 +4,5 @@
     <string name="passwordAuthDefText">Пароль</string>
     <string name="authButton">Войти</string>
     <string name="toolbarTitleMainDefText">Список продуктов</string>
+    <string name="addToBasketDefButtonText">Добавить</string>
 </resources>

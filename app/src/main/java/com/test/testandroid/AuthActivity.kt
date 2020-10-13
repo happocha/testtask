@@ -20,8 +20,7 @@ class AuthActivity: AppCompatActivity() {
         val login = loginAuthEditText.text.toString()
         val password = passwordAuthEditText.text.toString()
         if (login.isNotEmpty() && password.isNotEmpty()){
-            saveUser(login, password)
-            intentToMainAct()
+            //TODO
         }else{
             Toast.makeText(this, "Заполните все поля", Toast.LENGTH_SHORT).show()
         }

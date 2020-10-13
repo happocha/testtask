@@ -1,4 +1,4 @@
-package com.test.testandroid.mainAct
+package com.test.testandroid.mainAct.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView

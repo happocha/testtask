@@ -8,8 +8,8 @@ object ProductRepository {
         val mainProductArray = ArrayList<Product>()
         mainProductArray.add(
             Product(
-                "Бананы",
-                "banan",
+                "Бананы сушеные",
+                "/12/18/59",
                 123,
                 1
             )
@@ -17,7 +17,7 @@ object ProductRepository {
         mainProductArray.add(
             Product(
                 "Апельсины",
-                "orange",
+                "/11/73/82",
                 124,
                 1
             )
@@ -25,7 +25,7 @@ object ProductRepository {
         mainProductArray.add(
             Product(
                 "Лимон",
-                "limon",
+                "/10/91/14",
                 125,
                 1
             )
@@ -33,7 +33,7 @@ object ProductRepository {
         mainProductArray.add(
             Product(
                 "Вода",
-                "water",
+                "/11/70/69",
                 126,
                 2
             )
@@ -41,7 +41,7 @@ object ProductRepository {
         mainProductArray.add(
             Product(
                 "Кола",
-                "cola",
+                "/10/00/86",
                 127,
                 2
             )
@@ -49,7 +49,7 @@ object ProductRepository {
         mainProductArray.add(
             Product(
                 "Спрайт",
-                "sprite",
+                "/11/75/30",
                 128,
                 2
             )
@@ -57,7 +57,7 @@ object ProductRepository {
         mainProductArray.add(
             Product(
                 "Фанта",
-                "fanta",
+                "/11/47/34",
                 129,
                 2
             )
@@ -65,7 +65,7 @@ object ProductRepository {
         mainProductArray.add(
             Product(
                 "Рис",
-                "rice",
+                "/10/29/51",
                 130,
                 3
             )
