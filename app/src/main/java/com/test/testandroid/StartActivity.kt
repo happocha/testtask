@@ -10,11 +10,11 @@ class StartActivity: AppCompatActivity() {
     /*
     Проверить авторизирован ли пользователь (посмотеть в Room есть ли запись о пользователе)
     В зависимости от этого отправить на экран авторизации либо сразу в MainActivity
+
     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
 
