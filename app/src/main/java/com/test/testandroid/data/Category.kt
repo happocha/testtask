@@ -1,4 +1,4 @@
-package com.test.testandroid.mainAct.data
+package com.test.testandroid.data
 
 data class Category(
     val categoryId: Int,

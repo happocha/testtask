@@ -3,7 +3,7 @@ package com.test.testandroid.mainAct.adapter
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.test.testandroid.loadImage
-import com.test.testandroid.mainAct.data.Product
+import com.test.testandroid.data.Product
 import kotlinx.android.synthetic.main.product_main_holder.view.*
 
 class ProductViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {

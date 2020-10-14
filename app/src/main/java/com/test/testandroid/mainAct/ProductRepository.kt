@@ -1,10 +1,12 @@
 package com.test.testandroid.mainAct
 
-import com.test.testandroid.mainAct.data.Product
+import com.test.testandroid.data.Product
+import kotlinx.coroutines.delay
 
 object ProductRepository {
 
     suspend fun getProducts(token: String): ArrayList<Product>{
+        delay(1200)
         val mainProductArray = ArrayList<Product>()
         mainProductArray.add(
             Product(
