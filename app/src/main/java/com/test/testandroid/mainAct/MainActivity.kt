@@ -22,6 +22,7 @@ import com.test.testandroid.mainAct.adapter.MainRecyclerAdapter
         - minusButton (кнопка регулировки кол-ва продукта, если количество 0 - она становится invisible и plusButton становится invisible)
         - plusButton (кнопка регулировки кол-ва продукта, при нажатии кол-во увеличивается на 1)
     p.s Кол-во выводится в productCountTextView (если количество 0 invisible иначе visible)
+
     */
 
 class MainActivity : AppCompatActivity() {
