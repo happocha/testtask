@@ -1,4 +1,4 @@
-package com.test.testandroid.data
+package com.test.testandroid.models
 
 data class Category(
     val categoryId: Int,
