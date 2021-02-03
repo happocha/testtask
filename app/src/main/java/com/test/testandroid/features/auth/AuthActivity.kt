@@ -8,9 +8,6 @@ import com.test.testandroid.R
 import com.test.testandroid.features.main.MainActivity
 import kotlinx.android.synthetic.main.activity_auth.*
 
-/**
- * Сохранить пользователся в Room и пройти дальше в MainActivity
- */
 class AuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
