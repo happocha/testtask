@@ -1,5 +1,4 @@
-package com.test.testandroid.data
-
+package com.test.testandroid.models
 
 data class User(
     val login: String,

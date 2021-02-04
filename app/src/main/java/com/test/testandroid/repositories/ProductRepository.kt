@@ -1,77 +1,61 @@
-package com.test.testandroid.mainAct
+package com.test.testandroid.repositories
 
-import com.test.testandroid.data.Product
+import com.test.testandroid.models.Product
 import kotlinx.coroutines.delay
 
-object ProductRepository {
-
-    suspend fun getProducts(token: String): ArrayList<Product>{
+class ProductRepository {
+    suspend fun getProducts(token: String): List<Product> {
         delay(1200)
-        val mainProductArray = ArrayList<Product>()
-        mainProductArray.add(
+
+        return listOf(
             Product(
+                123,
                 "Бананы сушеные",
                 "/12/18/59",
-                123,
                 1
-            )
-        )
-        mainProductArray.add(
+            ),
             Product(
+                124,
                 "Апельсины",
                 "/11/73/82",
-                124,
                 1
-            )
-        )
-        mainProductArray.add(
+            ),
             Product(
+                125,
                 "Лимон",
                 "/10/91/14",
-                125,
                 1
-            )
-        )
-        mainProductArray.add(
+            ),
             Product(
+                126,
                 "Вода",
                 "/11/70/69",
-                126,
                 2
-            )
-        )
-        mainProductArray.add(
+            ),
             Product(
+                127,
                 "Кола",
                 "/10/00/86",
-                127,
                 2
-            )
-        )
-        mainProductArray.add(
+            ),
             Product(
+                128,
                 "Спрайт",
                 "/11/75/30",
-                128,
                 2
-            )
-        )
-        mainProductArray.add(
+            ),
             Product(
+                129,
                 "Фанта",
                 "/11/47/34",
-                129,
                 2
-            )
-        )
-        mainProductArray.add(
+            ),
             Product(
+                130,
                 "Рис",
                 "/10/29/51",
-                130,
                 3
             )
         )
-        return mainProductArray
     }
 }
