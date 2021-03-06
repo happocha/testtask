@@ -48,24 +48,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
+        android:src="@android:drawable/ic_media_ff"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/productNameTextView"
         app:layout_constraintTop_toBottomOf="@id/productNameTextView"
-        tools:ignore="ContentDescription"
-        tools:src="@android:drawable/ic_media_ff" />
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/minusButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
+        android:src="@android:drawable/ic_media_rew"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/productNameTextView"
         app:layout_constraintTop_toBottomOf="@id/productNameTextView"
-        tools:ignore="ContentDescription"
-        tools:src="@android:drawable/ic_media_rew" />
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/productCountTextView"

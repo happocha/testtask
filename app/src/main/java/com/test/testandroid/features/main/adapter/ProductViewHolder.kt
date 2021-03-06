@@ -1,27 +1,47 @@
 package com.test.testandroid.features.main.adapter
 
-import android.view.View
-import androidx.recyclerview.widget.RecyclerView
+import com.test.testandroid.CommonViewHolder
+import com.test.testandroid.databinding.ProductMainHolderBinding
+import com.test.testandroid.features.main.MainViewData
 import com.test.testandroid.loadImage
-import com.test.testandroid.models.Product
+import com.test.testandroid.showNow
 import kotlinx.android.synthetic.main.product_main_holder.view.*
 
-class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    fun bind(product: Product) = with(itemView) {
-        loadImage(context, productImageView, product.imageUrl)
-        productNameTextView.text = product.name
-        productCountTextView.text = product.count.toString()
+class ProductViewHolder(
+    private val binding: ProductMainHolderBinding,
+    private val callbacks: MainRecyclerAdapterCallbacks
+) : CommonViewHolder<MainViewData.Product>(binding.root) {
 
-        plusButton.setOnClickListener {
-            TODO("not implemented")
+    init {
+        with(binding.root) {
+            plusButton.setOnClickListener {
+                model?.let {
+                    callbacks.onPlusClicked(it.id)
+                }
+            }
+            minusButton.setOnClickListener {
+                model?.let {
+                    callbacks.onMinusClicked(it.id)
+                }
+            }
+            addToBasketButton.setOnClickListener {
+                model?.let {
+                    callbacks.onAddClicked(it.id)
+                }
+            }
         }
+    }
 
-        minusButton.setOnClickListener {
-            TODO("not implemented")
-        }
+    override fun onBind(position: Int, model: MainViewData.Product) {
+        with(binding) {
+            loadImage(root.context, productImageView, model.imageUrl)
+            productCountTextView.text = model.count.toString()
+            productNameTextView.text = model.name
 
-        addToBasketButton.setOnClickListener {
-            TODO("not implemented")
+            plusButton.showNow(model.count > 0)
+            minusButton.showNow(model.count > 0)
+            addToBasketButton.showNow(model.count <= 0)
+            productCountTextView.showNow(model.count > 0)
         }
     }
 }

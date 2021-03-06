@@ -1,12 +1,14 @@
 package com.test.testandroid.features.main.adapter
 
-import android.view.View
-import androidx.recyclerview.widget.RecyclerView
-import com.test.testandroid.models.Category
-import kotlinx.android.synthetic.main.category_main_holder.view.*
+import com.test.testandroid.CommonViewHolder
+import com.test.testandroid.databinding.CategoryMainHolderBinding
+import com.test.testandroid.features.main.MainViewData
 
-class CategoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    fun bind(category: Category) = with(itemView) {
-        categoryNameTextView.text = category.categoryName
+class CategoryViewHolder(
+    private val binding: CategoryMainHolderBinding
+) : CommonViewHolder<MainViewData.Category>(binding.root) {
+
+    override fun onBind(position: Int, model: MainViewData.Category) {
+        binding.categoryNameTextView.text = model.categoryName
     }
 }

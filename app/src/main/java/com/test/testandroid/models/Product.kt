@@ -5,5 +5,5 @@ data class Product(
     val name: String,
     val imageUrl: String,
     val categoryId: Int,
-    val count: Int = 0
+    var count: Int = 0
 )
